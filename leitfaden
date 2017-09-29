@@ -1,0 +1,31 @@
+Part I: Wie baue ich selber Images
+--> spring boot beispiel app welche alle dateien im aktuellen Verzeichniss auflistet
+--> buildfile
+--> docker build
+  (tag)
+ 
+Part II: Wie starte ich eine Docker Instanz
+--> docker run (Ohne Port mapping, Ohne Name)
+--> docker ps (Anzeigen laufender instanzen)
+--> docker stop rm (Stoppen und Löschen von Instanzen)
+--> docker run mit Portmapping und Namen
+ 
+Part III: Debuggen von Instanzen.
+--> Demoapp: localhost:8080
+--> docker exec -it <containername> sh (Sich mit dem dockercontainer verbinden, Shell)
+--> Dateien anlegen im Container --> Demoapp zeigt das an
+ 
+--> docker cp <host> <container> --> Dateien von Host zum Container kopieren.
+ 
+Part IV: Reproduzierbare Containerinstanzen
+--> docker-compose.yml ()
+--> docker-compose.yml (Mit volume einbinden volume)
+--> docker-compose.yml (Mit override um meherere Instanzen starten zu können)
+--> docker-compose.yml (Service DNS erklären)
+--> 2 Instanzen in docker-compose definieren, connecten, ping zum anderen service.
+ 
+Part V: Ausblick:
+--> docker-registry (Wie Dockerhub nur Team/Firmen intern )
+--> DockerHub Beispiele
+--> Frage & Antwort
+ 
