@@ -1,0 +1,4 @@
+FROM openjdk:8-jre
+
+COPY demo.jar demo.jar
+CMD ["java", "-jar", "demo.jar"]
